@@ -1,16 +1,17 @@
-#include <iostream>
+# include <iostream>
 using namespace std;
 
-int main() {
+int main(){
   char s[200];
   int i;
   i = 0;
-  
-  cout << "Introduceti un sir de caractere de la tastatura, fara spatii: ";
-  cin >> s;
- 
+
+  cout << "Introduceti propozitia: " << endl;
+  cin.getline(s, 199);
+
   while (s[i] != 0)
-   i++;
-  cout << "Sirul are " << i << " caractere." << endl;
-  return 0;
+    i++;
+    cout << "Nr de caractere in propozitie este: " << i << endl;
+
+    return 0;
 }
