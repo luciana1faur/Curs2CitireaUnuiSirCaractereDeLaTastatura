@@ -7,6 +7,7 @@ int main(){
   i = 0;
 
   cout << "Introduceti propozitia: " << endl;
+  cin.ignore();
   cin.getline(s, 199);
 
   while (s[i] != 0)
